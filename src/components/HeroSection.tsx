@@ -34,7 +34,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-4"
+                onClick={() => window.location.href = '/auth'}
+              >
                 <Play className="w-5 h-5 ml-2" />
                 شروع رایگان
               </Button>
